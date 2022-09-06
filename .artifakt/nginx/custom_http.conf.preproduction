@@ -1,0 +1,7 @@
+# Following code is included in the http block of Nginx
+map $http_host $MAGE_RUN_CODE
+{
+   default website1; 
+   www.mydomain1.com website1;
+   www.mydomain2.com website2;
+}
